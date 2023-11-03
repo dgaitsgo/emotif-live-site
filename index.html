@@ -1,0 +1,146 @@
+<html>
+    <head>
+		<meta charset="utf-8">
+		<title>emotif.live</title>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+		<link rel="manifest" href="/favicons/site.webmanifest">
+		<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+		<link href="https://fonts.googleapis.com/css?family=Cousine&display=swap" rel="stylesheet">
+		<style>
+			body {
+				min-width: 100vw;
+				min-height: 100vh;
+				background:black;
+				font-family: 'Cousine', monospace;
+			}
+
+			main {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				top: 30%;
+				height:30rem;
+				margin-top: 6%;
+			}
+			
+			.side {
+				position: absolute;
+				left: 10%;
+				/* top: 50%; */
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				height: 100vh;
+			}
+
+			p {
+				color: white;
+			}
+
+			h3 {
+				color : white;
+				white-space: nowrap;
+			}
+
+			.main-text {
+				text-align: justify;
+				text-justify: inter-word;
+				width: 42rem;
+			}
+
+			.logo-text {
+				font-weight: bold;
+			}
+
+			.text-wrapper {
+				margin-top: 3rem;
+			}
+
+			.text-wrapper > p {
+				font-size: 24px;
+			}
+
+			.social-link {
+				color: rgb(200, 200, 200);
+				text-decoration: none;
+				border-bottom-width: 1px;
+				border-bottom-style: dotted;
+			}
+
+			.social-links-wrapper {
+				padding-top: 2rem;
+				border-top: solid 1px rgb(32, 32, 32);
+			}
+
+			.dot-seperator {
+				opacity: 0.7;
+				color: rgb(170, 170, 170);
+			}
+
+			.address {
+				transform: rotate(180deg);
+				writing-mode: vertical-rl;
+				/* position: absolute; */
+				/* left: 0rem; */
+				/* top: 7rem; */
+			}
+
+			a {
+				font-size: 18px;
+			}
+
+			#svg-wrapper {
+				position: absolute;
+			}
+
+			#main-logo {
+				width: 42rem;
+				mix-blend-mode: difference;
+			}
+
+		</style>
+
+    </head>
+    <body>
+        <main id='main'>
+            <div class='logo-wrapper'>
+                <div id='svg-wrapper'></div>
+                <!-- <img id='main-logo' alt="emotif logo" src='assets/imgs/logo.png'></img> -->
+                <video id='main-logo' alt="emotif logo" loop muted autoplay >
+                    <source src='assets/imgs/logo.mp4' type='video/mp4'>
+                </video>
+            </div>
+            <div class='text-wrapper'>
+                <p class='main-text'><span class='logo-text'>emotif.live</span> is a multi-media group bending time, space and reality through audio-visual and interactive experiences.</p>
+                <p>Full site coming soon.</p>
+            </div>
+            <div class='contact-infos'>
+                 <div class='social-links-wrapper'>
+                    <a class="social-link" href="https://www.instagram.com/emotif.live/">email</a>
+                <!-- <svg class="header__socials__link__icon" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill='white' fill-rule="evenodd">
+                        <g id="Landing-Page" transform="translate(-77.000000, -7634.000000)" fill="white">
+                            <g id="logo-instagram" transform="translate(77.000000, 7634.000000)">
+                                <circle id="Oval" cx="15.18125" cy="4.865" r="1.2"></circle>
+                                <path d="M10,15 C7.2425,15 5,12.7575 5,10 C5,7.2425 7.2425,5 10,5 C12.7575,5 15,7.2425 15,10 C15,12.7575 12.7575,15 10,15 Z M10,7.5 C8.62125,7.5 7.5,8.62125 7.5,10 C7.5,11.37875 8.62125,12.5 10,12.5 C11.37875,12.5 12.5,11.37875 12.5,10 C12.5,8.62125 11.37875,7.5 10,7.5 Z" id="Shape" fill-rule="nonzero"></path>
+                                <path d="M15,20 L5,20 C2.43,20 0,17.57 0,15 L0,5 C0,2.43 2.43,0 5,0 L15,0 C17.57,0 20,2.43 20,5 L20,15 C20,17.57 17.57,20 15,20 Z M5,2.5 C3.83125,2.5 2.5,3.83125 2.5,5 L2.5,15 C2.5,16.19125 3.80875,17.5 5,17.5 L15,17.5 C16.16875,17.5 17.5,16.16875 17.5,15 L17.5,5 C17.5,3.83125 16.16875,2.5 15,2.5 L5,2.5 Z" id="Shape" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                    </svg> -->
+                    <span class="dot-seperator"> • </span>
+                    <a class="social-link" href="https://www.instagram.com/emotif.live/">instagram</a>
+                </div>
+            </div>
+        </main>       
+        <script type="text/javascript" src="./scripts/imports/d3.min.js"></script>
+		<script type="text/javascript" src="./scripts/emotif.js"></script>
+    </body>
+</html>
